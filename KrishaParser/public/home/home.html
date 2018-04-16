@@ -1,0 +1,29 @@
+<style>
+    .link{
+        padding: 10px;
+    }
+
+    .title{
+        padding: 10px;
+    }
+
+    .block{
+        margin: 30px;
+    }
+</style>
+<div class="home">
+  <button ng-click="vm.getKrisha()">Получить</button>
+    <div class="block" ng-repeat="link in vm.links  track by $index">
+        <span class="link" >{{$index+1}} {{link}}</span>
+
+        <span >
+            {{vm.titles[$index].title}}
+        </span>
+        <span >
+            {{vm.titles[$index].price}}
+        </span>
+        <br>
+    </div>
+
+
+</div>

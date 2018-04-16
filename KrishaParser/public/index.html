@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]><html lang="ru" class="lt-ie9 lt-ie8 lt-ie7"><![endif]-->
+<!--[if IE 7]><html lang="ru" class="lt-ie9 lt-ie8"><![endif]-->
+<!--[if IE 8]><html lang="ru" class="lt-ie9"><![endif]-->
+<!--[if gt IE 8]><!-->
+<html lang="ru" data-livestyle-extension="available">
+<!--<![endif]-->
+<head>
+    <meta charset="utf-8"/>
+    <title>Task</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-----------------------  CSS ------------------------->
+    <link rel="stylesheet" href="bootstrap.css">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="font-awesome.css">
+     <!--bower:css-->
+     <link rel="stylesheet" href="../bower_components/angular-material/angular-material.css" />
+     <!--endbower-->
+    <style>
+        .navbar { border-radius:0; }
+    </style>
+
+
+</head>
+
+<body ng-app="myApp"  ng-cloak>
+
+<nav class="navbar navbar-inverse" role="navigation">
+    <div class="navbar-header">
+        <a class="navbar-brand" ui-sref="#">AngularUI Router</a>
+    </div>
+    <ul class="nav navbar-nav">
+        <li><a ui-sref="home">Home</a></li>
+    </ul>
+</nav>
+<div class="container" ui-view>
+</div>
+
+<!-- bower:js -->
+<script src="../bower_components/angular/angular.js"></script>
+<script src="../bower_components/angular-animate/angular-animate.js"></script>
+<script src="../bower_components/angular-cookies/angular-cookies.js"></script>
+<script src="../bower_components/angular-ui-router/release/angular-ui-router.js"></script>
+<script src="../bower_components/angular-aria/angular-aria.js"></script>
+<script src="../bower_components/angular-material/angular-material.js"></script>
+<script src="../bower_components/ngstorage/ngStorage.js"></script>
+<!-- endbower -->
+
+
+<!-------------------- JS  -------------------->
+<script src="index.module.js"></script>
+<script src="index.route.js"></script>
+<script src="components/authService.js"></script>
+<script src="home/home.js"></script>
+
+</body>
+</html>
